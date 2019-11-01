@@ -16,5 +16,5 @@ export const appRoutes: Routes = [
   { path: 'myaccount',  component: MyaccountComponent},
   { path: 'search',  component: SearchComponent},
   { path: 'cart',  component: CartComponent},
-  { path: '', redirectTo: '/home', pathMatch: 'full' }
+  { path: '', redirectTo: '/help', pathMatch: 'full' }
 ];
