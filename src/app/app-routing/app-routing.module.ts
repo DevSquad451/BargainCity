@@ -9,4 +9,3 @@ import { appRoutes } from './appRoutes';
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-ghjg
