@@ -7,6 +7,7 @@ import { HelpComponent } from './../help/help.component';
 import { MyaccountComponent } from './../myaccount/myaccount.component';
 import { SearchComponent } from './../search/search.component';
 import { CartComponent } from './../cart/cart.component';
+import { TermsComponent } from './../terms/terms.component';
 
 export const appRoutes: Routes = [
   { path: 'home',  component: HomeComponent },
@@ -16,5 +17,6 @@ export const appRoutes: Routes = [
   { path: 'myaccount',  component: MyaccountComponent},
   { path: 'search',  component: SearchComponent},
   { path: 'cart',  component: CartComponent},
+  { path: 'terms',  component: TermsComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];

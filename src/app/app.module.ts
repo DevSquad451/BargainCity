@@ -12,6 +12,7 @@ import { HelpComponent } from './help/help.component';
 import { MyaccountComponent } from './myaccount/myaccount.component';
 import { SearchComponent } from './search/search.component';
 import { CartComponent } from './cart/cart.component';
+import { TermsComponent } from './terms/terms.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CartComponent } from './cart/cart.component';
     HelpComponent,
     MyaccountComponent,
     SearchComponent,
-    CartComponent
+    CartComponent,
+    TermsComponent
   ],
   imports: [
     BrowserModule,
