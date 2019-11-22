@@ -22,6 +22,10 @@ export class ContactusComponent implements OnInit {
     this.contact=new ContactModel;
   }
 
+  cancel(): void {
+    this.router.navigateByUrl('home');
+  }
+
   onSubmit(): void { }
 
 }
