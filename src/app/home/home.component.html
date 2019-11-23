@@ -10,6 +10,14 @@
     </div>
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
+      <tr *ngFor="let product of products">
+        <th>{{product.id}}</th>
+        <td>{{product.imgSrc}}</td>
+        <td>{{product.Name}}</td>
+        <td>{{product.Price}}</td>
+        <td>{{product.Quantity}}</td>
+        <td>{{product.Rating}}</td>
+      </tr>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       <button type="button" class="btn btn-light-blue btn-primary" (click)="onClick(cart)">Add to cart</button>
     </div>
