@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
-  
+
   onClick(): void {
     this.router.navigateByUrl('cart');
   }
