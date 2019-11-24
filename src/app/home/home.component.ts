@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ProductModel } from '../shared/product-model';
+import { ProductItems } from '../shared/productitems';
+import { CartComponent } from '../cart/cart.component';
 
 @Component({
   selector: 'app-home',
@@ -13,6 +15,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.products = ProductItems;
   }
 
 

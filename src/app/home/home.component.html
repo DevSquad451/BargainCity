@@ -1,67 +1,23 @@
-<col>
-<div class="grid-container">
-<div class="card-deck" align="right">
-  <div class="card mb-3" style="max-width: 20rem;">
-    <div class="view overlay">
-      <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
-      <a href="#!">
-        <div class="mask rgba-white-slight"></div>
-      </a>
-    </div>
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <tr *ngFor="let product of products">
-        <th>{{product.id}}</th>
-        <td>{{product.imgSrc}}</td>
-        <td>{{product.Name}}</td>
-        <td>{{product.Price}}</td>
-        <td>{{product.Quantity}}</td>
-        <td>{{product.Rating}}</td>
-      </tr>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <button type="button" class="btn btn-light-blue btn-primary" (click)="onClick(cart)">Add to cart</button>
-    </div>
-  </div>
-
-  <div class="card mb-3" style="max-width: 20rem;">
-    <div class="view overlay">
-      <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg" alt="Card image cap">
-      <a href="#!">
-        <div class="mask rgba-white-slight"></div>
-      </a>
-    </div>
-    <div class="card-body">
-      <h4 class="card-title">Card title</h4>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <button type="button" class="btn btn-light-blue btn-primary" (click)="onClick(cart)">Add to cart</button>
-    </div>
-  </div>
-
-  <div class="card mb-3" style="max-width: 20rem;">
-    <div class="view overlay">
-      <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/15.jpg" alt="Card image cap">
-      <a href="#!">
-        <div class="mask rgba-white-slight"></div>
-      </a>
-    </div>
-    <div class="card-body">
-      <h4 class="card-title">Card title</h4>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <button type="button" class="btn btn-light-blue btn-primary"(click)="onClick(cart)">Add to cart</button>
-    </div>
-  </div>
-
-  <div class="card mb-3" style="max-width: 20rem;">
-    <div class="view overlay">
-      <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/15.jpg" alt="Card image cap">
-      <a href="#!">
-        <div class="mask rgba-white-slight"></div>
-      </a>
-    </div>
-    <div class="card-body">
-      <h4 class="card-title">Card title</h4>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <button type="button" class="btn btn-light-blue btn-primary" (click)="onClick(cart)">Add to cart</button>
-    </div>
-  </div>
+<div class="container">
+    <table class="table table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="row">Image</th>
+          <th scope="row">Name</th>
+          <th scope="row">Price</th>
+          <th scope="row">Quantity</th>
+          <th scope="row">Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products">
+            <td>{{product.imgSrc}}</td>
+            <th>{{product.Name}}</th>
+            <td>{{product.Price}}</td>
+            <td>{{product.Quantity}}</td>
+            <td>{{product.Rating}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="button" class="btn btn-light-blue btn-primary" (click)="onClick(cart)">Add to cart</button>
 </div>
