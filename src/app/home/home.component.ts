@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
 import { ProductModel } from '../shared/product-model';
 
 @Component({
@@ -11,13 +10,11 @@ export class HomeComponent implements OnInit {
 
   public products: ProductModel[];
 
-  constructor(private router: Router) { }
+  constructor() { }
 
   ngOnInit() {
   }
 
-  onClick(): void {
-    this.router.navigateByUrl('cart');
-  }
+
 
 }
