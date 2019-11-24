@@ -17,6 +17,7 @@ import { ProductService } from './services/product.service';
 import { HttpClientModule } from '@angular/common/http';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { LoginComponent } from './login/login.component';
     TermsComponent,
     RegisterComponent,
     LoginComponent,
+    DetailComponent,
   ],
   imports: [
     BrowserModule,
