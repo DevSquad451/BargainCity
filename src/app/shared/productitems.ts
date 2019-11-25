@@ -3,7 +3,7 @@ import { ProductModel } from './product-model';
 export const ProductItems: ProductModel[] = [
   {
     id: '1',
-    imgSrc: '',
+    imgSrc: 'assets/MacBook Pro.jpg',
     Name: 'MacBook Pro',
     Price: '$1,299.99',
     Quantity: '1',
