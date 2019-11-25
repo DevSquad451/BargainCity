@@ -9,7 +9,6 @@ import { HomeComponent } from './home/home.component';
 import { DiscountedComponent } from './discounted/discounted.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { HelpComponent } from './help/help.component';
-import { MyaccountComponent } from './myaccount/myaccount.component';
 import { SearchComponent } from './search/search.component';
 import { CartComponent } from './cart/cart.component';
 import { TermsComponent } from './terms/terms.component';
@@ -28,7 +27,6 @@ import { DetailComponent } from './detail/detail.component';
     DiscountedComponent,
     ContactusComponent,
     HelpComponent,
-    MyaccountComponent,
     SearchComponent,
     CartComponent,
     TermsComponent,
