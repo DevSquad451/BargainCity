@@ -2,22 +2,27 @@
     <table class="table table-hover">
       <thead class="thead-dark">
         <tr>
-          <th scope="row">Image</th>
-          <th scope="row">Name</th>
-          <th scope="row">Price</th>
-          <th scope="row">Quantity</th>
-          <th scope="row">Rating</th>
+          <th scope="col">Image</th>
+          <th scope="col">Name</th>
+          <th scope="col">Price</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Rating</th>
+          <th scope="col"></th>
+          <th scope="col"></th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let product of products">
-            <td>{{product.imgSrc}}</td>
-            <th>{{product.Name}}</th>
+            <th>{{product.imgSrc}}</th>
+            <td>{{product.Name}}</td>
             <td>{{product.Price}}</td>
             <td>{{product.Quantity}}</td>
             <td>{{product.Rating}}</td>
+            <td><button type="button" class="btn btn-primary"
+              [routerLink]="['/detail', product.id]">View</button></td>
+            <td><button type="button" class="btn btn-secondary"
+              (click)="onClick(cart)">Add to Cart</button></td>
         </tr>
       </tbody>
     </table>
-    <button type="button" class="btn btn-light-blue btn-primary" (click)="onClick(cart)">Add to cart</button>
 </div>

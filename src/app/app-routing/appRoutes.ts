@@ -10,6 +10,7 @@ import { CartComponent } from './../cart/cart.component';
 import { TermsComponent } from './../terms/terms.component';
 import { LoginComponent } from './../login/login.component';
 import { RegisterComponent } from './../register/register.component';
+import { DetailComponent } from './../detail/detail.component';
 
 export const appRoutes: Routes = [
   { path: 'home',  component: HomeComponent },
@@ -22,5 +23,6 @@ export const appRoutes: Routes = [
   { path: 'terms',  component: TermsComponent},
   { path: 'login', component: LoginComponent},
   { path: 'register', component: RegisterComponent},
+  { path: 'detail/:id', component: DetailComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];

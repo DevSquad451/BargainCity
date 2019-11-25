@@ -19,4 +19,7 @@ export class ProductService {
   return ProductItems;
   }
 
+  returnProduct(id: string): ProductModel {
+    return ProductItems.filter(product => product.id === id)[0];
+  }
 }

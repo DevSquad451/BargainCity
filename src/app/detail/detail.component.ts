@@ -1,5 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ProductModel } from './../shared/product-model';
+import { Params, ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
+import { ProductService } from './../services/product.service';
 
 @Component({
   selector: 'app-detail',
@@ -8,11 +11,21 @@ import { ProductModel } from './../shared/product-model';
 })
 export class DetailComponent implements OnInit {
 
-  @Input() product: ProductModel;
+  //@Input() product: ProductModel;
 
-  constructor() { }
+  product: ProductModel;
+  constructor(private productService: ProductService,
+              private route: ActivatedRoute,
+              private location: Location) { }
 
   ngOnInit() {
+    const id = this.route.snapshot.params['id'];
+    console.log('id-');
+    console.log(id);
+    this.product = this.productService.returnProduct(id);
   }
 
+  goBack(): void {
+    this.location.back();
+  }
 }
