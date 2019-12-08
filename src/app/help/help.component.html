@@ -1,7 +1,17 @@
 <h5>FAQ</h5>
-<p>Q: What do the various types of shipping mean?</p>
-<p>A: Normal Shipping orders can take up to 14 days to arrive, Express Shipping takes no more than 5, and Same Day Shipping orders arrive the day of purchase.</p>
-<p>Q: Will I be notified of discounted items?</p>
-<p>A: Customers can opt into the email list in order to receive news about discounts and new acquisitions.</p>
-<p>Q: How can I recover my account if it is lost or stolen?</p>
-<p>A: Call our customer support number at 804-555-5555 to speak to a representative who will be glad to help.</p>
+<div class="container" style="width: 70%;">
+<table class="table table-hover">
+    <thead class="thead-dark">
+    <tr>
+        <th>Question</th>
+        <th>Answer</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let help of helps">
+        <td>{{help.Question}}</td>
+        <td>{{help.Answer}}</td>
+    </tr>
+    </tbody>
+</table>
+</div>
