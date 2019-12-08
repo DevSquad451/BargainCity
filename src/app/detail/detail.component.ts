@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ProductModel } from './../shared/product-model';
-import { Params, ActivatedRoute } from '@angular/router';
+import { Params, ActivatedRoute, Router } from '@angular/router';
 import { Location } from '@angular/common';
 import { ProductService } from './../services/product.service';
 
@@ -16,7 +16,8 @@ export class DetailComponent implements OnInit {
   product: ProductModel;
   constructor(private productService: ProductService,
               private route: ActivatedRoute,
-              private location: Location) { }
+              private location: Location,
+              private router: Router) { }
 
   ngOnInit() {
     const id = this.route.snapshot.params['id'];
@@ -27,5 +28,9 @@ export class DetailComponent implements OnInit {
 
   goBack(): void {
     this.location.back();
+  }
+
+  addCart(): void{
+    this.router.navigateByUrl('cart')
   }
 }

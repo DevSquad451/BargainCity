@@ -9,8 +9,11 @@
         <p class="card-text">Rating : {{product.Rating}}</p>
       </div>
     </div>
+    
     <div class="container row">
       <button type="button" class="btn btn-secondary" 
-        (click)="goBack()">Back</button>
+        (click)="goBack()">Back</button> &nbsp;
+        <button type="button" class="btn btn-primary"
+        (click)="addCart(cart)">Add to cart</button>
     </div>
   </div>
