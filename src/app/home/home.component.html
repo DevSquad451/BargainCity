@@ -44,7 +44,7 @@
             <td><button type="button" class="btn btn-primary"
               [routerLink]="['/detail', product.id]">View</button></td>
             <td><button type="button" class="btn btn-secondary"
-              (click)="addCart(cart)">Add to Cart</button></td>
+              [routerLink]="['/cart']">Add to Cart</button></td>
         </tr>
       </tbody>
     </table>
