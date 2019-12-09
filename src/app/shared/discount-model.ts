@@ -1,8 +1,9 @@
-export class ProductModel {
+export class DiscountModel {
     id: any;
     imgSrc?: string;
     Name: string;
-    Price: string;
+    Original: string;
+    Discount: string;
     Quantity: string;
     Rating: string;
 }

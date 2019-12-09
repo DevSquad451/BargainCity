@@ -1,5 +1,13 @@
 table
 {
-  margin-left: 6%;
+  /*margin-right: 100pt;*/
   border:1pt solid black;
 }
+
+thead
+{
+  border-bottom:1pt solid black;
+}
+
+.categories { width: 25%; float: left; }
+.floatRight { width: 25%; float: right; }
