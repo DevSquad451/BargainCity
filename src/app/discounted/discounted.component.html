@@ -32,7 +32,6 @@
         <th scope="col">Rating</th>
         <th scope="col"></th>
         <th scope="col"></th>
-        <th scope="col"></th>
       </tr>
     </thead>
     <tbody>
@@ -43,8 +42,6 @@
           <td>{{discount.Discount}}</td>
           <td>{{discount.Quantity}}</td>
           <td>{{discount.Rating}}</td>
-          <td><button type="button" class="btn btn-primary"
-            [routerLink]="['/detail', discount.id]">View</button></td>
           <td><button type="button" class="btn btn-secondary"
             [routerLink]="['/cart']">Add to Cart</button></td>
       </tr>
